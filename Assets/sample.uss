@@ -1,7 +1,4 @@
 .button {
-    width: 180px;
-    font-size: 24px;
-    height: 65px;
     border-left-color: rgba(102, 151, 214, 255);
     border-right-color: rgba(102, 151, 214, 255);
     border-top-color: rgba(102, 151, 214, 255);

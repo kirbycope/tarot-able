@@ -21,12 +21,12 @@ public class sample : MonoBehaviour
     private void OnEnable()
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
-        Button buttonStart = root.Q<Button>("ButtonStart");
-        Button buttonStop = root.Q<Button>("ButtonStop");
-        Button buttonColor = root.Q<Button>("ButtonColor");
+        Button button3 = root.Q<Button>("Button3");
+        Button button5 = root.Q<Button>("Button5");
+        Button button10 = root.Q<Button>("Button10");
 
-        //buttonStart.clicked += () => cube.StartRotate()
-        //buttonStop.clicked += () => cube.StopRotate()
-        //buttonColor.clicked += () => cube.ChangeColor()
+        //button3.clicked += () => cube.StartRotate()
+        //button5.clicked += () => cube.StopRotate()
+        //button10.clicked += () => cube.ChangeColor()
     }
 }
