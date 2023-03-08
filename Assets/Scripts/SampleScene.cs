@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
-public class sample : MonoBehaviour
+public class SampleScene : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,6 @@ public class sample : MonoBehaviour
         
     }
 
-    // https://www.youtube.com/watch?v=yUXFHAOXhcA
     private void OnEnable()
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
@@ -25,8 +25,8 @@ public class sample : MonoBehaviour
         Button button5 = root.Q<Button>("Button5");
         Button button10 = root.Q<Button>("Button10");
 
-        //button3.clicked += () => cube.StartRotate()
-        //button5.clicked += () => cube.StopRotate()
-        //button10.clicked += () => cube.ChangeColor()
+        button3.clicked += () => SceneManager.LoadScene(sceneName: "Scene3");
+        button5.clicked += () => SceneManager.LoadScene(sceneName: "Scene5");
+        button10.clicked += () => SceneManager.LoadScene(sceneName: "Scene10");
     }
 }
