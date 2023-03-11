@@ -13,8 +13,9 @@ public class Scene5 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Screen.orientation = ScreenOrientation.AutoRotation;
         animator = GetComponent<Animator>();
-        Invoke("PlayStartAnim", 1f);
+        Invoke("PlayStartAnim", .2f);
 
     }
 
