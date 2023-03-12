@@ -23,6 +23,7 @@ function populateCards(cards) {
         var flipCardImg = document.createElement("img");
         flipCardImg.alt = cards[i].title;
         flipCardImg.src = "https://github.com/kirbycope/tarot-able/raw/main/Assets/Textures/cards/" + cards[i].name + ".jpg";
+        if (Math.random() < 0.5) {flipCardImg.classList.add("reversed");}
         flipCardFront.appendChild(flipCardImg);
 
         //    <div class="flip-card-back">

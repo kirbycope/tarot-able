@@ -50,3 +50,7 @@ body {
     padding: 1rem;
     width: 80%;
 }
+
+.reversed {
+    transform: rotate(180deg);
+}
