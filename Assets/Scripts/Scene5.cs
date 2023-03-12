@@ -31,7 +31,7 @@ public class Scene5 : MonoBehaviour
         Button draw = root.Q<Button>("draw");
 
         back.clicked += () => SceneManager.LoadScene(sceneName: "SampleScene");
-        draw.clicked += () => ShuffleCards();
+        //draw.clicked += () => ShuffleCards();
     }
 
     public void Shuffle_Cards()
