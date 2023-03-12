@@ -55,13 +55,6 @@ h2 {
     transform: rotateY(180deg);
 }
 
-.center {
-    display: flex;
-    margin-left: auto;
-    padding: 1rem;
-    width: 80%;
-}
-
 .reversed {
     transform: rotate(180deg);
 }
