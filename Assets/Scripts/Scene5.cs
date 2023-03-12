@@ -16,7 +16,6 @@ public class Scene5 : MonoBehaviour
         Screen.orientation = ScreenOrientation.AutoRotation;
         animator = GetComponent<Animator>();
         Invoke("PlayStartAnim", .2f);
-
     }
 
     // Update is called once per frame
