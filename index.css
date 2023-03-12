@@ -39,7 +39,7 @@ body {
 }
 
 .flip-card-back {
-    background-image: url('https://github.com/kirbycope/tarot-able/raw/main/Assets/Textures/cards/back.jpg');
+    background-image: url('https://github.com/kirbycope/tarot-able/raw/main/Assets/Textures/cards/back.png');
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
