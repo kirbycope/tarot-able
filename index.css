@@ -1,6 +1,11 @@
 body {
     background-image: url('https://github.com/kirbycope/tarot-able/raw/main/Assets/Textures/background1.jpg');
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    padding-top: 3rem;
 }
 
 .flip-card {
@@ -39,8 +44,9 @@ body {
 }
 
 .flip-card-back {
-    background-image: url('https://github.com/kirbycope/tarot-able/raw/main/Assets/Textures/cards/back.png');
+    background-blend-mode: multiply;
     background-color: #2980b9;
+    background-image: url('https://github.com/kirbycope/tarot-able/raw/main/Assets/Textures/cards/back.png');
     color: white;
     transform: rotateY(180deg);
 }

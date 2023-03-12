@@ -31,8 +31,8 @@ function populateCards(cards) {
         flipCardBack.classList.add("flip-card-back");
         flipCardInner.appendChild(flipCardBack);
 
-        //      <h1>The Fool</h1>
-        var flipCardh1 = document.createElement("h1");
+        //      <h2>The Fool</h2>
+        var flipCardh1 = document.createElement("h2");
         flipCardh1.innerHTML = cards[i].title;
         flipCardBack.appendChild(flipCardh1);
 
