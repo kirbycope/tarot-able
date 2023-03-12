@@ -19,7 +19,7 @@ function populateCards(cards) {
         flipCardFront.classList.add("flip-card-front");
         flipCardInner.appendChild(flipCardFront);
 
-        //      <img src="https://github.com/kirbycope/tarot-able/raw/main/Assets/Textures/cards/ar00.jpg" alt="The Fool" style="width:300px;height:500px;">
+        //      <img src=".../ar00.jpg" alt="The Fool" style="width:300px;height:500px;">
         var flipCardImg = document.createElement("img");
         flipCardImg.alt = cards[i].title;
         flipCardImg.src = "https://github.com/kirbycope/tarot-able/raw/main/Assets/Textures/cards/" + cards[i].name + ".jpg";
