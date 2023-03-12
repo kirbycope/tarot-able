@@ -58,3 +58,12 @@ h2 {
 .reversed {
     transform: rotate(180deg);
 }
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: .25rem;
+}
