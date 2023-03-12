@@ -12,6 +12,7 @@ function draw3() {
     clearActive();
     document.getElementById("3").classList.add("active");
     removeCards();
+    document.getElementById("searchInput").style.setProperty("display", "none");
     rand = shuffle(cards);
     populateCards(rand.slice(0, 3)); 
 }
@@ -21,6 +22,7 @@ function draw5() {
     clearActive();
     document.getElementById("5").classList.add("active");
     removeCards();
+    document.getElementById("searchInput").style.setProperty("display", "none");
     rand = shuffle(cards);
     populateCards(rand.slice(0, 5));
 }
@@ -30,6 +32,8 @@ function dictionary() {
     clearActive();
     document.getElementById("d").classList.add("active");
     removeCards();
+    document.getElementById("searchInput").style.removeProperty("display");
+    document.getElementById("searchInput").style.setProperty("display", "inline-block");
     populateCards(cards, false);
 }
 
@@ -88,6 +92,37 @@ function populateCards(cards, reversal=true) {
 /** Removes all cards on the page. */
 function removeCards() {
     document.getElementById("cards").replaceChildren();
+}
+
+function searchFilter() {
+    var si = document.getElementById("searchInput");
+    var filter = si.value.toUpperCase();
+    if (filter == "") {
+        removeCards();
+        populateCards(cards, false);
+    }
+    else {
+        if (filter == "1") {filter = "ONE";}
+        if (filter == "2") {filter = "TWO";}
+        if (filter == "3") {filter = "THREE";}
+        if (filter == "4") {filter = "FOUR";}
+        if (filter == "5") {filter = "FIVE";}
+        if (filter == "6") {filter = "SIX";}
+        if (filter == "7") {filter = "SEVEN";}
+        if (filter == "8") {filter = "EIGHT";}
+        if (filter == "9") {filter = "NINE";}
+        if (filter == "10") {filter = "TEN";}
+        var cardContainer = document.getElementById("cards");
+        var flipCards = cardContainer.getElementsByClassName("flip-card");
+        for (i = 0; i < flipCards.length; i++) {
+            var h2 = flipCards[i].childNodes[0].childNodes[1].childNodes[0].innerHTML.toUpperCase();
+            if (!h2.includes(filter)) {
+                flipCards[i].style.setProperty("display", "none");
+            } else {
+                flipCards[i].style.removeProperty("display");
+            }
+        }
+    }
 }
 
 /** Shuffles the given array. */
