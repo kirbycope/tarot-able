@@ -63,7 +63,7 @@ h2 {
 .flip-card-back {
     background-blend-mode: multiply;
     background-color: #2980b9;
-    background-image: url('https://github.com/kirbycope/tarot-able/raw/main/img/cards/back.png');
+    background-image: url('https://github.com/kirbycope/tarot-able/raw/main/img/back.png');
     color: white;
     padding-left: 1rem;
     padding-right: 1rem;
