@@ -60,7 +60,7 @@ function populateCards(cards, reversal=true) {
         var flipCardImg = document.createElement("img");
         flipCardImg.alt = cards[i].title;
         flipCardImg.classList.add("flip-card-front-image");
-        flipCardImg.src = "https://github.com/kirbycope/tarot-able/raw/main/Assets/Textures/cards/" + cards[i].name + ".jpg";
+        flipCardImg.src = "https://github.com/kirbycope/tarot-able/raw/main/img/cards/" + cards[i].name + ".jpg";
         if(reversal) {
             if (Math.random() < 0.5) {flipCardImg.classList.add("reversed");}
         }
