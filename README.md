@@ -1,4 +1,6 @@
 ![Tarot-able](/tarot-able.png)
 
+https://tarot-able.com/
+
 # tarot-able
-The Tarot-able app and website.
+A tarot card reading app with a dictionary.
